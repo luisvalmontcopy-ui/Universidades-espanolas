@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>unigraf</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+
+  <style>
+
+        body {
+      padding-top: 60px;
+      font-family: 'Inter', sans-serif;
+    }
+        html, body {
+          height: 100%;
+          margin: 0;
+        }
+
+        /* Bloque completo */
+        .full-height {
+          height: 100vh;
+        }
+
+
+        .hero {
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .bg-purple{
+      background-color: #6246ea;
+    }
+
+    .bg-soft-purple{
+      background-color: #d1d1e9;
+    }
+
+    .bg-red{
+      background-color: #e45858;
+    }
+
+        /* Mobile: cada bloque 50% de pantalla */
+        @media (max-width: 767.98px) {
+          .block-height {
+            height: 50vh;
+          }
+        }
+
+        /* Desktop: cada bloque ocupa toda la altura del contenedor */
+        @media (min-width: 768px) {
+          .block-height {
+            height: 100%;
+          }
+        }
+
+        /* Para que iframe y contenido ocupen todo el div */
+        .fill-parent {
+          width: 100%;
+          height: 100%;
+        }
+
+        .object-fit-cover {
+          object-fit: cover;
+        }
+</style>
+
+</head>
+<body>
+
+  <!-- Navbar simple -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">unigraf</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto gap-4">
+          <li class="nav-item"><a class="nav-link" href="#evolucion">Evolución</a></li>
+          <li class="nav-item"><a class="nav-link" href="#privadavspublica">Privada vs Pública</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mapa">Mapa</a></li>
+           <li class="nav-item"><a class="nav-link" href="#madrid">Análisis Madrid</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sinuni">Zonas sin Universidades</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero minimal -->
+  <section class="hero bg-purple text-white">
+    <div class="container">
+      <h1 class="display-4"><b>Radiografía de la Universidad en España</b></h1>
+      <h3 class="lead"><p align="center"></p>¿Hay demasiados universitarios para la oferta laboral que existe?</p>
+<p align="center"></p>¿Se ha sustituido el prestigio de la pública por el dinero de la privada?</p>
+<p align="center"></p>¿Es necesario que haya una universidad en cada provincia?</p>
+En este análisis no vamos a responder a ninguna de estas preguntas, pero a partir de los datos que exponemos conocerás un poco mejor la situación histórica y actual de la universidad en nuestro país.
+      </h3>
+    </div>
+  </section>
+
+
+  <!-- bloque 1 -->
+<section class="container-fluid p-0 full-height d-flex" id="evolucion">
+  <div class="row g-0 flex-column flex-md-row w-100 h-100">
+
+     <!-- GRÁFICO -->
+   <div class="col-12 col-md-6 order-2 order-md-1 block-height
+            d-flex align-items-center p-0 flourish-embed flourish-chart"
+     data-src="visualisation/27230107">
+      <script src="https://public.flourish.studio/resources/embed.js"></script>
+      <noscript>
+        <img src="https://public.flourish.studio/visualisation/27230107/thumbnail"
+             width="100%" alt="chart visualization" />
+      </noscript>
+    </div>
+
+    <!-- TEXTO -->
+    <div class="col-12 col-md-6 order-1 order-md-2 block-height d-flex align-items-center justify-content-center bg-soft-purple">
+      <div class="px-4 px-md-5 text-center text-md-start">
+        <h2 class="mb-3">De un privilegio “para unos pocos” a la democratización universitaria</h2>
+        <p class="mb-0">
+          Si tienes más de 30 años es muy probable que conozcas a poca gente de la generación de tus padres que haya ido a la universidad (y si hablamos de la de tus abuelos, aún menos). Los primeros datos de matriculaciones totales en España nos dicen que algo menos de 200.000 personas estaban cursando estudios superiores en nuestro país. Estas cifras se multiplicaron durante la década de los 80 y los 90 hasta llegar a superar el millón y medio de matriculados en 1995.  
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- bloque 1 -->
+<section class="container-fluid p-0 full-height d-flex" id="privadavspublica">
+  <div class="row g-0 flex-column flex-md-row w-100 h-100">
+
+     <!-- GRÁFICO -->
+   <div class="col-12 col-md-6 order-2 order-md-2 block-height
+            d-flex align-items-center p-0 flourish-embed flourish-chart"
+    data-src="visualisation/27314199" ><script src="https://public.flourish.studio/resources/embed.js"></script><noscript>
+        <img src="https://public.flourish.studio/visualisation/27314199/thumbnail"
+             width="100%" alt="chart visualization" />
+      </noscript>
+    </div>
+
+    <!-- TEXTO -->
+    <div class="col-12 col-md-6 order-1 order-md-1 block-height d-flex align-items-center justify-content-center bg-light">
+      <div class="px-4 px-md-5 text-center text-md-start">
+        <h2 class="mb-3">El “Boom” de la privada y el estancamiento de&nbsp;la&nbsp;pública</h2>
+        <p class="mb-0">
+          Según datos del INE, solo un 9,5% del alumnado universitario en 2005 estaba matriculado en entidades privadas. 20 años después vemos que ese porcentaje ha subido hasta el 27,17%. <br/><br/>¿Qué ha podido pasar para este crecimiento tan pronunciado?
+La respuesta la encontramos principalmente en el aumento de alumnos de Másteres de universidades privadas. Por primera vez hay más estudiantes matriculados en másteres privados en España (52.9%) que públicos (47.1%). También ha aumentado (de 13,5% en 2015 a 22,8% en 2025).
+
+
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- bloque 3 -->
+<section class="container-fluid p-0 full-height d-flex" id="mapa">
+  <div class="row g-0 flex-column flex-md-row w-100 h-100">
+
+    <!-- MAPA / IMAGEN -->
+    <div class="col-12 col-md-6 order-2 order-md-1 block-height d-flex p-0">
+     <iframe
+        src="https://umap.openstreetmap.fr/es/map/universidades-espanolas_1347410?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true#6/36.191/-3.823"
+        class="fill-parent border-0"
+        allowfullscreen
+        allow="geolocation"
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <!-- TEXTO -->
+    <div class="col-12 col-md-6 order-1 order-md-2 block-height d-flex align-items-center justify-content-center bg-soft-purple">
+      <div class="px-4 px-md-5 text-center text-md-start">
+        <h2 class="mb-3">98 universidades para 50 provincias:<br>Así se reparten</h2>
+        <p class="mb-0">
+          En 1970 únicamente existían 19 universidades para los algo menos de 200.000 estudiantes universitarios matriculados en España. 4 de ellas privadas.<br/>
+Comunidades como las Islas Baleares (1978), Castilla La-Mancha (1985) o La Rioja (1992) no tuvieron su primera universidad hasta que se instauró la democracia.
+Hoy el número total de universidades ha crecido hasta las 50 universidades públicas y las 46 privadas. En el siguiente mapa podemos ver la distribución de cada una de las sedes universitarias divididas entre privadas y públicas. 
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- bloque 4 -->
+<section class="container-fluid p-0 full-height d-flex" id="madrid">
+  <div class="row g-0 flex-column flex-md-row w-100 h-100">
+
+    <!-- MAPA / IMAGEN -->
+    <div class="col-12 col-md-6 order-2 order-md-2 block-height d-flex p-0">
+      <iframe
+  src="https://umap.openstreetmap.fr/es/map/universidades-espanolas_1347410?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true#9/40.4835/-3.4799"
+  class="fill-parent border-0"
+  loading="lazy"
+  allowfullscreen
+  allow="geolocation"
+></iframe>
+
+    </div>
+
+    <!-- TEXTO -->
+    <div class="col-12 col-md-6 order-1 order-md-1 block-height d-flex align-items-center justify-content-center bg-light">
+      <div class="px-4 px-md-5 text-center text-md-start">
+        <h2 class="mb-3">Madrid: Donde se cruzan las facultades</h2>
+        <p class="mb-0">
+        Hasta 22 universidades distintas tienen su sede en Madrid (además de 2 campus de otras universidades con sede). Es la comunidad autónoma con más facultades y también la que cuenta con más número de universidades por proximidad (hasta 10 entidades en 3 kilómetros a la redonda desde el centro de la capital).
+A pesar de solo contar con una universidad privada hasta 1993, en la actualidad encontramos más oferta de titularidad privada en la provincia (64%). Además, su presencia está mucho más diseminada a lo largo de toda la comunidad que las opciones públicas (concentradas mayormente en el distrito Moncloa-Aravaca de la capital).
+
+
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- bloque 5 -->
+<section class="container-fluid p-0 full-height d-flex" id="sinuni">
+  <div class="row g-0 flex-column flex-md-row w-100 h-100">
+
+     <!-- GRÁFICO -->
+   <div class="col-12 col-md-6 order-2 order-md-1 block-height
+            d-flex align-items-center p-0 flourish-embed flourish-chart"
+     data-src="story/3564147">
+      <script src="https://public.flourish.studio/resources/embed.js"></script>
+      <noscript>
+        <img src="https://public.flourish.studio/story/3564147/thumbnail"
+             width="100%" alt="chart visualization" />
+      </noscript>
+    </div>
+
+    <!-- TEXTO -->
+    <div class="col-12 col-md-6 order-1 order-md-2 block-height d-flex align-items-center justify-content-center bg-soft-purple">
+      <div class="px-4 px-md-5 text-center text-md-start">
+        <h2 class="mb-3">Dos casos de expansión: la pública en los 90 y la privada en los 2000</h2>
+        <p class="mb-0">
+          A la par del crecimiento del número de estudiantes, los años 90 también supuso el año de mayor número universidades públicas fundadas en España (15, 5 de ellas en Andalucía). Provincias como Jaén, Almería, Burgos, Lleida, Tarragona, Castellón o La Rioja contaron por primera vez con universidad propia. Este crecimiento frenó en el año 1998, cuando se constituyó la última universidad pública levantada en nuestro país (Universidad Politécnica de Cartagena).<br/>
+Por el contrario, el número de entidades privadas no ha hecho más que crecer en los últimos años. Desde 1998, año de creación de la última universidad pública, se han fundado 30 nuevas universidades privadas. Las comunidades autónomas donde más se ha notado este crecimiento fueron Madrid (con 8 nuevas sedes privadas), Andalucía (5), Canarias (4) y la Comunidad Valenciana (4).
+
+
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+  <!-- Footer simple -->
+  <footer class="bg-light text-center py-4">
+    <p class="mb-0">&copy; 2026 unigraf by <a href="https://luisvalmont.es/" target="_blank">Luis Valenzuela</a></p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
